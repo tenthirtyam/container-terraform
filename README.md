@@ -33,8 +33,9 @@ docker run --rm -it tenthirtyam/terraform
 
 Run a local plan:
 
-```hcl
-  docker run --rm -it -v /users/tenthirtyam/terraform/my-plan:/tmp/shared tenthirtyam/terraform apply
+```console
+  cd /Users/tenthirtyam/terraform/my-plan
+  docker run --rm -it --name terraform -v $(pwd):/tmp -w /tmp tenthirtyam/terraform init
 ```
 
-Where `/users/tenthirtyam/terraform/my-plan` is the local directory path for your Terraform configurations.
+Where `/Users/tenthirtyam/terraform/my-plan` is the local directory path for your Terraform configurations.
