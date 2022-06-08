@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## [v1.0.0](https://github.com/tenthrtyam/container-terraform/releases/tag/v1.0.0)
+## [v1.2.2](https://github.com/tenthrtyam/container-terraform/releases/tag/v1.2.2)
 
 > Release Date: 2022-06-08
 
