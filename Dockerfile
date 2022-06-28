@@ -10,7 +10,7 @@ ENV TERRAFORM_VERSION="1.2.3"
 RUN tdnf update -y
 
 # Install packages
-tdnf install -y ${OS_PACKAGES}
+RUN tdnf install -y ${OS_PACKAGES}
 
 # Install HashiCorp Terraform
 RUN wget -q https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_${OS_ARCH}.zip && \
