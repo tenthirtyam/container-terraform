@@ -8,7 +8,7 @@ ENV TERRAFORM_VERSION="1.2.3"
 
 # Install packages
 RUN tdnf update && \
-    tdnf install ${OS_PACKAGES} -y
+    tdnf -y install ${OS_PACKAGES}
 
 # Install HashiCorp Terraform
 RUN wget -q https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_${OS_ARCH}.zip && \
@@ -16,7 +16,7 @@ RUN wget -q https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraf
     rm terraform_${TERRAFORM_VERSION}_linux_${OS_ARCH}.zip
 
 # Cleanup
-RUN tdnf erase -y unzip && \
+RUN tdnf -y erase unzip && \
     tdnf clean all
 
 WORKDIR ${HOME}
