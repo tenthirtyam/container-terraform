@@ -9,7 +9,7 @@ This image includes the following components:
 Component | Version | Description
 ---------|----------|----------
 VMware Photon OS | 4.0 | A Linux container host optimized for vSphere and cloud-computing platforms.
-HashiCorp Terraform | 1.2.3 | Terraform is an open-source infrastructure-as-code software that enables you to safely and predictably create, change, and improve infrastructure.
+HashiCorp Terraform | 1.2.4 | Terraform is an open-source infrastructure-as-code software that enables you to safely and predictably create, change, and improve infrastructure.
 
 ## Get Started
 
