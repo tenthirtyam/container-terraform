@@ -4,7 +4,7 @@ LABEL authors="tenthirtyam"
 
 ENV OS_ARCH="amd64"
 ENV OS_PACKAGES="wget tar git unzip"
-ENV TERRAFORM_VERSION="1.2.4"
+ENV TERRAFORM_VERSION="1.2.5"
 
 # Update reposotories
 RUN tdnf update -y
