@@ -4,7 +4,7 @@ LABEL authors="tenthirtyam"
 
 ENV OS_ARCH="amd64"
 ENV OS_PACKAGES="wget tar git unzip"
-ENV TERRAFORM_VERSION="1.2.7"
+ENV TERRAFORM_VERSION=$(curl -s https://api.github.com/repos/hashicorp/terraform/releases/latest | jq -r '.tag_name' | cut -c 2-)
 
 # Update reposotories
 RUN tdnf update -y
