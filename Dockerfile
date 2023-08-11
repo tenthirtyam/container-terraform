@@ -1,4 +1,4 @@
-FROM photon:4.0
+FROM photon:5.0
 
 LABEL authors="tenthirtyam"
 
